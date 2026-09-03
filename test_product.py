@@ -26,8 +26,8 @@ def test_product(page:Page):
     checkout = CheckoutDetails(page)
     checkout.checkout_details()
 
-    #finish
+    #finish the order
     finish = finishpage(page)
-    finish.final_finish()
+    finish.final_finish()hdrhbe
 
 
