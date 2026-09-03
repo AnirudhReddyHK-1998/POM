@@ -28,6 +28,6 @@ def test_product(page:Page):
 
     #finish the order
     finish = finishpage(page)
-    finish.final_finish()hdrhbe
+    finish.final_finish()
 
 
