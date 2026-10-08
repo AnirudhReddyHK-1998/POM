@@ -10,9 +10,9 @@ class cart_details:
 
     def get_cart_details(self):
         self.cart.click()
-        product_name = self.page.locator(".inventory_item_name").text_content()
-        assert product_name == "Sauce Labs Backpack"
-        product_price = self.page.locator(".inventory_item_price").text_content()
-        assert product_price == "$29.99"
+        assert self.page.locator(".inventory_item_name").filter(has_text="Sauce Labs Backpack")
+
+        assert self.page.locator(".inventory_item_price").filter(has_text="$29.99")
+
         self.checkout.click()
 
